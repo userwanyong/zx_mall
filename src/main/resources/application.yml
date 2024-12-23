@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  config:
+    import: classpath:application-secret.yml
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${db.ip}:3306/${db.framework}
+    username: ${db.username}
+    password: ${db.password}
+  servlet:
+    multipart:
+      max-file-size: 25MB
+      max-request-size: 25MB
+
+alipay:
+  appId: ${pay.appId}
+  appPrivateKey: ${pay.appPrivateKey}
+  alipayPublicKey: ${pay.alipayPublicKey}
+  notifyUrl: ${pay.notifyUrl}
