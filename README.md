@@ -1,6 +1,17 @@
 # 臻享商城
 ## 简介
 一个基于vue、springboot搭建的商城项目。具有`用户端`与`后台管理端`
+## 启动
+### 前端
+在\user\vue\vue目录下
+
+1、执行 `npm inatall`
+
+2、执行`npm run serve`
+### 后端
+修改yml配置文件直接运行即可
+
+
 ## 功能
 ### 基本功能
 1、登录注册
@@ -91,7 +102,7 @@ https://blog.csdn.net/nener_give_up/category_12862693.html
 ## 缺点与不足
 1、存在部分bug
 
-2、使用雪花id增强安全性
+2、优化：使用雪花id增强安全性
 
 3、优化：加入redis缓存在查询商品后将数据放到redis中，减少数据库压力
 
