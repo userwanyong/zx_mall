@@ -51,7 +51,6 @@ public class FileController {
     }
 
 
-    @HoneyLogs(operation = "文件", type = LogType.ADD)
     @AuthAccess
     @GetMapping("/download/{fileName}")
     public void download(@PathVariable String fileName, HttpServletResponse response) throws IOException {

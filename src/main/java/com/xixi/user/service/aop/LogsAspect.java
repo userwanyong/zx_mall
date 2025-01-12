@@ -47,7 +47,7 @@ public class LogsAspect {
             }
         }
         if (loginUser == null) {
-//            log.error("未获取到当前操作用户信息");
+            log.error("未获取到当前操作用户信息");
             return;
         }
         //获取HttpServletRequest对象
